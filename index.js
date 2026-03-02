@@ -53,7 +53,7 @@ app.use(cookieParser())
 // CORS configuration (sirf ye frontend server allow hai)
 app.use(
 	cors({
-		origin: "http://localhost:5173", // Frontend URL
+		origin: "https://my-study-notion-learning.vercel.app/", // Frontend URL
 		credentials: true, // Cookies allow karne ke liye
 	})
 )
