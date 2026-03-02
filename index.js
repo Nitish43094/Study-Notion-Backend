@@ -1,16 +1,11 @@
 // Express framework import kar rahe hain server banane ke liye
 const express = require('express')
 const app = express();
-
 // Environment variables (.env file) load karne ke liye
 require('dotenv').config();
-
 // Server kis port pe chalega
 const PORT = process.env.PORT || 4000
-
-
 // ================= CONFIG FILES =================
-
 // Database connection file (MongoDB etc.)
 const dbConnection = require('./config/dbConnection')
 
