@@ -166,9 +166,9 @@ exports.getAllCoursesByInstructor = async (req, res) => {
 
 // Get Single Course 
 exports.getCourseDetails = async (req, res) => {
+    console.log("Inside the backend course id ->",req.body)
     try {
         const { courseId } = req.body
-        
         const courseDetails = await Course.findById(courseId)
             .populate({
                 path: "instructor",
@@ -202,7 +202,7 @@ exports.getCourseDetails = async (req, res) => {
 
         return res.status(200).json({
             success: true,
-            message: "Course Detaiils Fetched Successfully",
+            message: "Course Details Fetched Successfully",
             data: courseDetails,
             totalDuration,
         })

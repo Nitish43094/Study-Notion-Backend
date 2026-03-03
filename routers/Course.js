@@ -58,7 +58,7 @@ router.delete("/deleteCourse", auth,isInstructor,deleteCourse)
 router.post("/updateCourseProgress",auth,isStudent,updateCourseProgress)
 
 // Get Details for a Specific Courses
-router.post("/getCourseDetails", auth, getCourseDetails)
+router.post("/getCourseDetails", getCourseDetails)
 router.post("/getFullCourseDetailse",auth,isStudent,getFullCourseDetails)
 // Get all Courses Under a Specific Instructor
 // router.get("/getInstructorCourses", auth, isInstructor, getInstructiorCourse)
